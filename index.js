@@ -1,4 +1,5 @@
 const assert = require('assert');
+const R = require('ramda');
 
 module.exports = {
   equal: name => value => expected => assert.strictEqual(
@@ -21,5 +22,8 @@ module.exports = {
   ),
   lessThanOrEqual: name => value => expected => assert.ok(
     value <= expected, `${name} should be less than or equal to ${expected}, but is ${value}`
+  ),
+  isOfType: name => value => expected => assert.strictEqual(
+    R.type(value), expected, `type of ${name} should be ${expected}, not ${R.type(value)}`
   )
 };

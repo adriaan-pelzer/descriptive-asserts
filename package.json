@@ -1,0 +1,26 @@
+{
+  "name": "descriptive-asserts",
+  "version": "0.0.0",
+  "description": "Asserts with proper descriptions",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriaan-pelzer/descriptive-asserts.git"
+  },
+  "keywords": [
+    "assert",
+    "testing"
+  ],
+  "author": "Adriaan Pelzer",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/adriaan-pelzer/descriptive-asserts/issues"
+  },
+  "homepage": "https://github.com/adriaan-pelzer/descriptive-asserts#readme",
+  "dependencies": {
+    "ramda": "^0.27.0"
+  }
+}
