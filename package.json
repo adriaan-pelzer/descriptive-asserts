@@ -1,6 +1,6 @@
 {
   "name": "descriptive-asserts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Asserts with proper descriptions",
   "main": "index.js",
   "scripts": {
