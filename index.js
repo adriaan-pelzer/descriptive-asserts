@@ -26,7 +26,7 @@ module.exports = {
   isOfType: name => value => expected => assert.strictEqual(
     R.type(value), expected, `type of ${name} should be ${expected}, not ${R.type(value)}`
   ),
-  isOneOf: name => value => expected => asserts.ok(
+  isOneOf: name => value => expected => assert.ok(
     R.contains(value, expected), `${name} is not one of ${expected}`
   )
 };
