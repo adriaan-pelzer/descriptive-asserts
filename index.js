@@ -5,6 +5,9 @@ module.exports = {
   equal: name => value => expected => assert.strictEqual(
     value, expected, `${name} should be ${expected}, not ${value}`
   ),
+  deepEqual: name => value => expected => assert.deepStrictEqual(
+    value, expected, `${name} does not deep equals the expect value`
+  ),
   match: name => value => regex => assert.ok(
     regex.test(value), `${name} should match ${regex}, but is ${value}`
   ),
